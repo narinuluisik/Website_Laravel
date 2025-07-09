@@ -6,12 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class AboutContent extends Model
 {
-    protected $table = 'about_contents'; // İsteğe bağlı, ama açıkça yazmak iyidir
-
+    protected $table = 'about_contents'; 
     protected $fillable = [
         'name',
         'subtitle',
         'content',
-        'image'
+        'image',
+        'title', 
+        'vision', 
+        'mission'
     ];
 }
