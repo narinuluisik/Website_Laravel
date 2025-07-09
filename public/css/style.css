@@ -1,0 +1,248 @@
+.hero-section {
+  background: linear-gradient(135deg, #6366F1 0%, #10B981 100%);
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+
+   margin-bottom: 0;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #f9f9f9; /* Hizmetlerin arka planı */
+  border-top-left-radius: 50% 20px;
+  border-top-right-radius: 50% 20px;
+  z-index: -1;
+}
+
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-custom-light {
+  color: #5A4A3C;
+  background-color: #FAF3E0;
+  border: 1px solid #D6C9B6;
+  padding: 12px 36px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom-light:hover {
+  background-color: #F5F5DC;
+  color: #3E2F1C;
+  border-color: #CFC3AA;
+}
+
+.services-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  flex: 1 1 300px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #10B981;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.wave-divider {
+  position: relative;
+  margin-top: -50px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+.why-choose {
+  max-width: 900px;
+  margin: 100px auto 150px;
+  padding: 40px 30px;
+  background: #fafafa; /* çok açık, beyaz ton */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  color: #4b4b4b;
+}
+
+.why-choose h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #6366F1; /* hero mor tonu */
+}
+
+.why-choose p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #10B981; /* hero yeşil tonu */
+  font-weight: 600;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 32px;
+}
+
+.feature {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(16,185,129,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  box-shadow: 0 8px 25px rgba(16,185,129,0.2);
+}
+
+.feature .icon {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #10B981;
+}
+
+.feature h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #5A4A3C;
+}
+
+.feature p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #5A4A3Cdd;
+}
+
+
+
+.testimonials-section {
+  max-width: 900px;
+  margin: 80px auto 120px;
+  padding: 0 20px;
+  color: #444444;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonials-section h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #4F46E5; /* Hero morunun biraz daha yumuşatılmış hali */
+  margin-bottom: 36px;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  flex: 1 1 280px;
+  background: #FFFFFF; /* Daha nötr, beyaz arka plan */
+  border-radius: 14px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.15); /* Mor tonlu hafif gölge */
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 10px 36px rgba(99, 102, 241, 0.3);
+}
+
+.testimonial-card blockquote {
+  margin: 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333333;
+  position: relative;
+}
+
+.testimonial-card blockquote p {
+  margin-bottom: 1.2rem;
+  quotes: "“" "”" "‘" "’";
+}
+
+.testimonial-card blockquote p::before {
+  content: open-quote;
+  font-size: 2rem;
+  line-height: 0;
+  vertical-align: top;
+  color: #22C55E; /* Yumuşak yeşil */
+  margin-right: 6px;
+}
+
+.testimonial-card blockquote footer {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #4F46E5;
+  text-align: right;
+  margin-top: 6px;
+}
