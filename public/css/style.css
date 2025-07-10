@@ -249,35 +249,52 @@ h2.section-heading {
   object-fit: cover;
 }
 
-/* === Vizyon / Misyon Kartları === */
-.vision-mission-section {
-  background-color: #F9FAFB;
+.vision-mission-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap; /* Mobilde alt alta düşmesi için */
 }
 
-.vision-mission-card {
-  background: white;
+.vision-box,
+.mission-box {
+  flex: 1 1 calc(50% - 15px); /* %50 eksi boşluk kadar */
+  background: linear-gradient(135deg, #f3f4f6, #eef2ff);
   border-radius: 20px;
+  padding: 40px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  padding: 30px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
+  min-height: 300px;
 }
 
-.vision-mission-card:hover {
-  transform: translateY(-4px);
+.vision-box:hover,
+.mission-box:hover {
+  transform: translateY(-6px);
 }
 
-.vision-mission-card h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 15px;
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #4f46e5;
+  margin-bottom: 20px;
 }
 
-.vision-mission-card p {
-  font-size: 1.05rem;
-  color: #4b5563;
+.vision-box p,
+.mission-box p {
+  font-size: 1.1rem;
   line-height: 1.7;
+  color: #374151;
 }
+
+/* Mobil görünüm için */
+@media (max-width: 768px) {
+  .vision-box,
+  .mission-box {
+    flex: 1 1 100%;
+  }
+}
+
 
 /* === Ekip Kartları === */
 .team-section {
@@ -315,3 +332,75 @@ h2.section-heading {
   color: #4B5563;
   line-height: 1.5;
 }
+
+
+/* === İLETİŞİM ÜST ALAN === */
+.contact-section {
+  background: linear-gradient(145deg, #EEF2F7, #FFFFFF);
+  color: #1f2937;
+  padding: 100px 20px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-text {
+  max-width: 600px;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3f3f46;
+}
+
+.contact-text h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+.contact-image img {
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+footer a:hover {
+  color: #6366F1;
+  text-decoration: underline;
+}
+
+       .navbar {
+            background: #fff;
+            box-shadow: 0 2px 16px rgba(99,102,241,0.07);
+            border-bottom: 1.5px solid #e6eaf3;
+        }
+        .navbar .navbar-brand {
+            color: #6366F1 !important;
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+        }
+        .navbar .nav-link {
+            color: #232946 !important;
+            font-weight: 600;
+            margin-left: 8px;
+            margin-right: 8px;
+            transition: color 0.2s;
+        }
+        .navbar .nav-link.active, .navbar .nav-link:hover {
+            color: #10B981 !important;
+        }
+        

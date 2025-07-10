@@ -25,23 +25,22 @@
   </div>
 </section>
 
-{{-- === Vizyon & Misyon Bölümü === --}}
-<section class="py-5 bg-light">
-  <div class="container d-flex flex-wrap justify-content-center gap-4">
-    @if($about->vision)
-    <div class="shadow-sm p-4 bg-white rounded-4" style="min-width:300px; max-width:450px; flex:1;">
-      <h4 class="fw-bold text-primary mb-3">Vizyonumuz</h4>
-      <p class="text-secondary" style="line-height: 1.6;">{!! nl2br(e($about->vision)) !!}</p>
-    </div>
-    @endif
+<section class="vision-mission-modern my-5">
+    <div class="vision-mission-wrapper">
+        @if($about->vision)
+        <div class="vision-box">
+            <h3 class="section-title">Vizyonumuz</h3>
+            <p>{!! nl2br(e($about->vision)) !!}</p>
+        </div>
+        @endif
 
-    @if($about->mission)
-    <div class="shadow-sm p-4 bg-white rounded-4" style="min-width:300px; max-width:450px; flex:1;">
-      <h4 class="fw-bold text-success mb-3">Misyonumuz</h4>
-      <p class="text-secondary" style="line-height: 1.6;">{!! nl2br(e($about->mission)) !!}</p>
+        @if($about->mission)
+        <div class="mission-box">
+            <h3 class="section-title">Misyonumuz</h3>
+            <p>{!! nl2br(e($about->mission)) !!}</p>
+        </div>
+        @endif
     </div>
-    @endif
-  </div>
 </section>
 
 {{-- === Ekibimiz Bölümü === --}}
@@ -54,7 +53,7 @@
       <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="p-4 h-100 shadow-sm rounded-4 bg-white text-center">
           @if($member->image)
-          <img src="{{ asset('storage/team/' . $member->image) }}" alt="{{ $member->name }}" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+         <img src="{{ $member->image }}"  alt="{{ $member->name }}" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
           @else
           <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px;"></div>
           @endif
