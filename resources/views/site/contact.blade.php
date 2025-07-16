@@ -26,17 +26,17 @@
 {{-- === İletişim Bilgi + Form Bölümü === --}}
 <section class="contact-section" style="background: linear-gradient(145deg, #EEF2F7, #FFFFFF); padding: 80px 20px;">
   <div class="container d-flex flex-wrap align-items-start justify-content-between gap-5">
-
+@if($contacts)
     <div class="contact-info" style="flex: 1 1 400px; max-width: 600px;">
       <h3 class="fw-bold mb-4" style="color:#232946;">İletişim Bilgileri</h3>
       <ul class="list-unstyled" style="font-size: 1.05rem;">
-        <li class="mb-3">📍 <strong>Adres:</strong>İstanbul/Türkiye</li>
-        <li class="mb-3">📧 <strong>E-posta:</strong> info@teknosoft.com</li>
-        <li class="mb-3">☎️ <strong>Telefon:</strong> +90 (212) 555 55 55</li>
-        <li>🕐 <strong>Çalışma Saatleri:</strong> Hafta içi 09:00 - 18:00</li>
+        <li class="mb-3">📍 <strong>Adres: </strong>{{$contacts->adress}}</li>
+        <li class="mb-3">📧 <strong>E-posta: </strong> {{$contacts->email}}</li>
+        <li class="mb-3">☎️ <strong>Telefon: </strong>{{$contacts->phone}}</li>
+        <li>🕐 <strong>Çalışma Saatleri: </strong>{{ $contacts->time }}</li>
       </ul>
     </div>
-
+@endif
     <div class="contact-form" style="flex: 1 1 400px; max-width: 600px;">
       <h3 class="mb-4 fw-bold text-center" style="color: #4f46e5;">İletişim Formu</h3>
 

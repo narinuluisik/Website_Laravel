@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 </head>
-<body style="margin: 0; background-color: #f8fafc;">
+<body style="margin: 0; background-color: #f8fafc; display: flex; flex-direction: column; min-height: 100vh;">
+
 
     <!-- Sidebar -->
 
@@ -18,10 +19,10 @@
     <a href="{{ route('admin.dashboard') }}" class="sidebar-link mb-2">Dashboard</a>
    
     <a href="{{ route('admin.about-page.index') }}" class="sidebar-link mb-2">Hakkımızda </a>
-        <a href="{{ route('admin.contact') }}" class="sidebar-link mb-2">İletişim </a>
-     {{-- 
-    <a href="{{ route('admin.logout') }}" class="sidebar-link">Çıkış Yap</a> 
-    --}}
+        <a href="{{ route('admin.contact') }}" class="sidebar-link mb-2">Gelen Mesajlar </a>
+    
+    <a href="{{ route('admin.iletisimbilgileri.index') }}" class="sidebar-link mb-2">İletişim Bilgileri </a> 
+
 </div>
 
 
@@ -37,7 +38,8 @@
 </nav>
 
     <!-- Main Content -->
-    <main class="main-content" style="margin-left: 220px; padding: 30px 20px;">
+<main class="main-content" style="margin-left: 220px; padding: 30px 20px; flex: 1;">
+
         @yield('content')
     </main>
 

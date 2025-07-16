@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use App\Models\ContactMessage;
 
-class ContactController extends Controller
+class ContactMessageController extends Controller
 {
     public function index()
     {
-        return view('site.contact');
+        $contacts = Contact::first(); 
+       
+        return view('site.contact',compact('contacts'));
     }
 
     public function send(Request $request)

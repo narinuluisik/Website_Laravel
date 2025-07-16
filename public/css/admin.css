@@ -32,7 +32,7 @@
 }
 
 footer {
-    margin-left: 250px;
+    margin-left: 220px;
     background: #f6f8fb;
     padding: 20px;
     border-top: 1px solid #e5e7eb;
@@ -40,6 +40,7 @@ footer {
     font-size: 0.9rem;
     color: #6b7280;
 }
+
 
 .sidebar a:hover {
     background-color: #374151;
