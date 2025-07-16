@@ -6,6 +6,11 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Middleware\AdminAuthMiddleware;
+use App\Http\Controllers\Admin\AboutContentController;
+use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\TeamMemberController;
+use App\Http\Controllers\Admin\AboutPageController;
+use App\Http\Controllers\AdminContactController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/hakkimizda', [AboutController::class, 'index'])->name('about');
@@ -22,3 +27,13 @@ Route::get('/admin/logout', [AdminAuthController::class, 'logout'])->name('admin
 Route::middleware([AdminAuthMiddleware::class])->group(function(){
     Route::get('admin/dashboard/',[AdminDashboardController::class,'index'])->name('admin.dashboard');
 });
+
+Route::get('/admin/contact',[AdminContactController::class,'index'])->name('admin.contact');
+Route::resource('/admin/about-content', AboutContentController::class);
+
+Route::resource('/admin/projects', ProjectController::class);
+
+Route::resource('/admin/team-members', TeamMemberController::class);
+
+Route::get('/admin/about-page', [AboutPageController::class, 'index'])->name('admin.about-page.index');
+

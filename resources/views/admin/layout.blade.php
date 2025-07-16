@@ -16,8 +16,10 @@
     <h4 class="text-center mb-4">Admin Panel</h4>
 
     <a href="{{ route('admin.dashboard') }}" class="sidebar-link mb-2">Dashboard</a>
-    {{-- 
-    <a href="{{ route('admin.about.edit') }}" class="sidebar-link mb-2">Hakkımızda Düzenle</a>
+   
+    <a href="{{ route('admin.about-page.index') }}" class="sidebar-link mb-2">Hakkımızda </a>
+        <a href="{{ route('admin.contact') }}" class="sidebar-link mb-2">İletişim </a>
+     {{-- 
     <a href="{{ route('admin.logout') }}" class="sidebar-link">Çıkış Yap</a> 
     --}}
 </div>
