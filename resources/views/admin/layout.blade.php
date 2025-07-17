@@ -26,9 +26,11 @@
 </div>
 
 
- <nav class="navbar navbar-light bg-light shadow-sm" style="height: 60px; border-bottom: 1px solid #e2e8f0; padding: 0 30px;">
+<nav class="navbar navbar-light shadow-sm"
+     style="height: 60px; background-color: #f1f5f9; border-bottom: 1px solid #e2e8f0; padding: 0 30px;">
+
     <div class="container-fluid justify-content-between">
-        <span class="navbar-brand fw-bold" style="color: #232946;">TeknoSoft Yönetim Paneli</span>
+        <span class="navbar-brand fw-bold" style="color: #232946;">NarSoft Yönetim Paneli</span>
 
         <div class="d-flex align-items-center gap-3">
             <a href="{{ route('home') }}" target="_blank" class="btn btn-sm btn-outline-primary">Siteyi Görüntüle</a>
@@ -45,7 +47,7 @@
 
  <footer>
   <div class="container d-flex justify-content-between align-items-center">
-    <span>&copy; {{ date('Y') }} TeknoSoft Yönetim Paneli. Tüm hakları saklıdır.</span>
+    <span>&copy; {{ date('Y') }} NarSoft Yönetim Paneli. Tüm hakları saklıdır.</span>
    
     <small class="text-muted">v1.0.0</small>
   </div>

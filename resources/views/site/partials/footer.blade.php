@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row gy-4">
       <div class="col-md-4">
-        <h5 class="text-white fw-bold mb-3">TeknoSoft</h5>
+        <h5 class="text-white fw-bold mb-3">NarSoft</h5>
         <p>Yenilikçi teknoloji çözümleriyle işlerinizi dijitalleştiriyoruz.</p>
       </div>
       <div class="col-md-4">
@@ -16,11 +16,11 @@
       <div class="col-md-4">
         <h6 class="fw-semibold mb-3">İletişim</h6>
         <p><i class="bi bi-geo-alt-fill me-2"></i> İstanbul, Türkiye</p>
-        <p><i class="bi bi-envelope-fill me-2"></i> info@teknosoft.com</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> info@narsoft.com</p>
         <p><i class="bi bi-telephone-fill me-2"></i> +90 555 123 45 67</p>
       </div>
     </div>
     <hr style="border-color: #374151; margin: 2rem 0;">
-    <p class="text-center small mb-0">&copy; {{ date('Y') }} TeknoSoft. Tüm hakları saklıdır.</p>
+    <p class="text-center small mb-0">&copy; {{ date('Y') }} NarSoft. Tüm hakları saklıdır.</p>
   </div>
 </footer>

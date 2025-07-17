@@ -2,14 +2,14 @@
   <div class="container-xl">
     <div class="row py-3">
       <div class="col-12 text-center mb-5">
-        <h2 class="section-heading fw-bold mt-4" style="font-size:2.8rem; color:#232946; letter-spacing:-1px;">Neden TeknoSoft?</h2>
+        <h2 class="section-heading fw-bold mt-4" style="font-size:2.8rem; color:#232946; letter-spacing:-1px;">Neden NarSoft?</h2>
         <div style="width:64px;height:4px;background:#6366F1;margin:16px auto 0;border-radius:2px;"></div>
       </div>
     </div>
     <div class="row align-items-center">
       <div class="col-lg-5 mb-4 mb-lg-0 text-lg-start text-center">
         <p class="lead mb-4" style="color:#232946; font-size:1.18rem;">
-          Dijital dönüşüm yolculuğunuzda <span style="color:#6366F1; font-weight:600;">güvenilir</span> ve <span style="color:#10B981; font-weight:600;">yenilikçi</span> bir partner arıyorsanız, TeknoSoft sizin için burada.
+          Dijital dönüşüm yolculuğunuzda <span style="color:#6366F1; font-weight:600;">güvenilir</span> ve <span style="color:#10B981; font-weight:600;">yenilikçi</span> bir partner arıyorsanız, NarSoft sizin için burada.
         </p>
         <ul class="list-unstyled fs-5">
           <li class="mb-3 d-flex align-items-center">

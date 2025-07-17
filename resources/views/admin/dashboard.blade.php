@@ -5,13 +5,11 @@
 @section('content')
 <div class="container py-4">
 
-  {{-- Başlık --}}
   <div class="mb-4">
-    <h4 class="fw-bold text-dark">TeknoSoft Yönetim Paneli</h4>
+    <h4 class="fw-bold text-dark"> Yönetim Paneli</h4>
     <p class="text-muted">Sistem durumunu inceleyebilir, içerikleri yönetebilirsiniz.</p>
   </div>
 
-  {{-- Üst Kartlar --}}
   <div class="row g-4 mb-4">
     <div class="col-md-4">
       <div class="card shadow-sm border-start border-primary border-4">
@@ -39,9 +37,8 @@
     </div>
   </div>
 
-  {{-- Alt Bölüm: Son Mesajlar + Hızlı Linkler --}}
   <div class="row g-4 mb-4">
-    {{-- Son Mesajlar --}}
+    
     <div class="col-md-6">
       <div class="card shadow-sm rounded-3">
         <div class="card-header bg-light fw-semibold">📬 Son Gelen Mesajlar</div>
@@ -61,7 +58,6 @@
       </div>
     </div>
 
-    {{-- Hızlı Linkler --}}
     <div class="col-md-6">
       <div class="card shadow-sm rounded-3">
         <div class="card-header bg-light fw-semibold">🔗 Hızlı Yönetim</div>
@@ -78,7 +74,7 @@
     </div>
   </div>
 
-  {{-- Sistem Bilgisi (Opsiyonel) --}}
+
   <div class="card shadow-sm rounded-3">
     <div class="card-body small text-muted">
       Laravel {{ app()->version() }} &nbsp; | &nbsp; PHP {{ PHP_VERSION }} &nbsp; | &nbsp; IP: {{ request()->ip() }}

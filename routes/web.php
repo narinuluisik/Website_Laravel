@@ -29,9 +29,9 @@ Route::get('/admin/logout', [AdminAuthController::class, 'logout'])->name('admin
 
 Route::middleware([AdminAuthMiddleware::class])->group(function(){
     Route::get('admin/dashboard/',[AdminDashboardController::class,'index'])->name('admin.dashboard');
-});
 
-Route::get('/admin/contact',[AdminContactController::class,'index'])->name('admin.contact');
+
+    Route::get('/admin/contact',[AdminContactController::class,'index'])->name('admin.contact');
 Route::resource('/admin/about-content', AboutContentController::class);
 
 Route::resource('/admin/projects', ProjectController::class);
@@ -45,3 +45,5 @@ Route::get('/admin/about-page', [AboutPageController::class, 'index'])->name('ad
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('iletisimbilgileri', ContactController::class);
 });
+});
+

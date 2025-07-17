@@ -3,7 +3,7 @@
 @section('content')
 <div class="container mt-4">
 
-    <h3>Hakkımızda </h3>
+    <h4>Hakkımızda </h4>
     
     <table class="table table-bordered">
         <thead>
@@ -43,7 +43,7 @@
     <hr>
 
     {{-- Projeler --}}
-    <h3>Projeler</h3>
+    <h4>Projeler</h4>
 
     <table class="table table-bordered">
         <thead>
@@ -82,7 +82,7 @@
     <hr>
 
     {{-- Takım Üyeleri --}}
-    <h3>Takım Üyeleri</h3>
+    <h4>Takım Üyeleri</h4>
    
     <table class="table table-bordered">
         <thead>
