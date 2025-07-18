@@ -22,6 +22,12 @@
             İletişim
           </a>
         </li>
+
+      <li class="nav-item">
+          <a href="{{ route('admin.login') }}" class="btn btn-outline-primary px-3 py-2">
+            Yönetim Girişi
+          </a>
+        </li>  
       </ul>
     </div>
   </div>

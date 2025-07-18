@@ -9,16 +9,16 @@
     <div class="testimonials-scroll" style="overflow:hidden;">
       <div class="testimonials-track d-flex flex-row gap-3 pb-2">
         <div class="testimonial-slide flex-shrink-0 px-3 py-4 bg-white rounded-4 shadow-sm text-center" style="min-width:260px; max-width:320px;">
-          <p class="quote mb-3 fs-6 fst-italic" style="color:#232946;">"TeknoSoft ile çalışmak büyük bir keyifti. Projemiz tam zamanında teslim edildi."</p>
-          <div class="author text-primary fw-bold small">— Ahmet Yılmaz</div>
+          <p class="quote mb-3 fs-6 fst-italic" style="color:#232946;">"NarSoft ile çalışmak büyük bir keyifti. Projemiz tam zamanında teslim edildi."</p>
+          <div class="author text-primary fw-bold small">— Bengüsu Duman</div>
         </div>
         <div class="testimonial-slide flex-shrink-0 px-3 py-4 bg-white rounded-4 shadow-sm text-center" style="min-width:260px; max-width:320px;">
           <p class="quote mb-3 fs-6 fst-italic" style="color:#232946;">"Profesyonel ve hızlı destekleri için teşekkür ederiz."</p>
-          <div class="author text-primary fw-bold small">— Ayşe Demir</div>
+          <div class="author text-primary fw-bold small">— Tuğçe Özturaç</div>
         </div>
         <div class="testimonial-slide flex-shrink-0 px-3 py-4 bg-white rounded-4 shadow-sm text-center" style="min-width:260px; max-width:320px;">
-          <p class="quote mb-3 fs-6 fst-italic" style="color:#232946;">"İş süreçlerimiz TeknoSoft sayesinde dijitalleşti ve çok daha verimli hale geldi."</p>
-          <div class="author text-primary fw-bold small">— Mehmet Kaya</div>
+          <p class="quote mb-3 fs-6 fst-italic" style="color:#232946;">"İş süreçlerimiz NarSoft sayesinde dijitalleşti ve çok daha verimli hale geldi."</p>
+          <div class="author text-primary fw-bold small">— Serife Ocak</div>
         </div>
         
       
